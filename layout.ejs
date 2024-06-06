@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= locals.title %></title>
+    <meta name="description" content="<%= locals.description %>">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script type="text/javascript" defer src="/js/script.js"></script>
+</head>
+<body>
+    <%- include('search')  %>
+    <div class="container">
+        <%- include('header') %>
+        <main class="main">
+            <%- body %>
+        </main> 
+        <%- include('footer') %>
+    </div>
+    
+</body>
+</html>
